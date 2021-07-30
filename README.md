@@ -43,7 +43,7 @@ catkin build (コンパイルしたいパッケージ)
 ```
 echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${HOME}/ros_ws/src/photoneo_setup_sim/models" >> ~/.bashrc
 ```
-環境の立ち上げ方(HV8)
+##### シミュレーション環境の立ち上げ方(HV8)
 ```
 roslaunch photoneo_setup_sim spawn_object.launch object_name:=HV8
 ```
@@ -52,16 +52,28 @@ object_nameに他にはHV7などの別物体やHV8_barazumiでばら積みの物
 ```
 roslaunch photoneo_setup_sim spawn_object.launch object_name:=HV8_box_barazumi
 ```
-<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box.png">
+<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box.png" width="100" height="100">
+
+##### モデルの座標のtf(groud_truth)を出す
+モデル単体
+```
+roslaunch tf_publish model_tf.launch object_name:=(物体の種類)
+```
+モデルが複数
+```
+roslaunch tf_publish bara_model_tf.launch object_count:=(物体の数) object_name:=(物体の種類)
+```
+##### 平面部分を除去する
+```
+roslaunch cloud_practice planar_segmentation.launch
+```
+
+
+
 
 
 ### 実行方法(ラフ認識) 
 ```
-roslaunch photoneo_setup_sim spawn_object.launch 
-
-roslaunch tf_publish model_tf.launch
-
-roslaunch cloud_practice planar_segmentation.launch
 
 roslaunch estimator pose_estimator.launch
 
