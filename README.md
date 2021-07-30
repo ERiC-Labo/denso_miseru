@@ -63,6 +63,7 @@ roslaunch tf_publish model_tf.launch object_name:=(物体の種類)
 ```
 roslaunch tf_publish bara_model_tf.launch object_count:=(物体の数) object_name:=(物体の種類)
 ```
+<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_tf_rviz.png" width="500" height="300">
 ##### 平面部分を除去する
 ```
 roslaunch cloud_practice planar_segmentation.launch
