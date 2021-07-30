@@ -43,7 +43,7 @@ catkin build (コンパイルしたいパッケージ)
 ```
 echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${HOME}/ros_ws/src/photoneo_setup_sim/models" >> ~/.bashrc
 ```
-##### シミュレーション環境の立ち上げ方(HV8)
+### シミュレーション環境の立ち上げ方(HV8)
 ```
 roslaunch photoneo_setup_sim spawn_object.launch object_name:=HV8
 ```
@@ -52,9 +52,11 @@ object_nameに他にはHV7などの別物体やHV8_barazumiでばら積みの物
 ```
 roslaunch photoneo_setup_sim spawn_object.launch object_name:=HV8_box_barazumi
 ```
+<p align="center">
 <img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box.png" width="400" height="300"><img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box_rviz.png" width="500" height="300">
+</p>
 
-##### モデルの座標のtf(groud_truth)を出す
+### モデルの座標のtf(groud_truth)を出す
 モデル単体
 ```
 roslaunch tf_publish model_tf.launch object_name:=(物体の種類)
@@ -63,8 +65,11 @@ roslaunch tf_publish model_tf.launch object_name:=(物体の種類)
 ```
 roslaunch tf_publish bara_model_tf.launch object_count:=(物体の数) object_name:=(物体の種類)
 ```
+<p align="center">
 <img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_tf_rviz.png" width="500" height="300">
-##### 平面部分を除去する
+</p>
+
+### 平面部分を除去する
 ```
 roslaunch cloud_practice planar_segmentation.launch
 ```
