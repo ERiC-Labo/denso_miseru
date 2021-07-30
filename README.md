@@ -78,8 +78,6 @@ roslaunch cloud_practice planar_segmentation.launch
 </p>
 
 
-
-
 ### 実行方法(ラフ認識) 
 ```
 
@@ -87,6 +85,14 @@ roslaunch estimator pose_estimator.launch
 
 roslaunch tf_publish error_calculate.launch #精度算出
 ```
+
+### メッシュ点群の生成
+```
+roslaunch annotation_package mesh_cloud_bara_publish.launch
+```
+<p align="center">
+<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_mesh.png" width="500" height="300">
+</p>
 
 ### 注意するべきパラメータ 
 ```
