@@ -53,6 +53,7 @@ object_nameに他にはHV7などの別物体やHV8_barazumiでばら積みの物
 roslaunch photoneo_setup_sim spawn_object.launch object_name:=HV8_box_barazumi
 ```
 <img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box.png" width="400" height="300">
+<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box_rviz.png" width="400" height="300">
 
 ##### モデルの座標のtf(groud_truth)を出す
 モデル単体
