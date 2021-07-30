@@ -73,7 +73,9 @@ roslaunch tf_publish bara_model_tf.launch object_count:=(物体の数) object_na
 ```
 roslaunch cloud_practice planar_segmentation.launch
 ```
-
+<p align="center">
+<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box_planar.png" width="500" height="300">
+</p>
 
 
 
