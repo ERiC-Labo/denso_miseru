@@ -27,7 +27,7 @@
             <arg name="world_name" value="$(find photoneo_setup_sim)/world/HV8_barazumi.world"/>
         </include>
     </group>
-    <group if="$(eval object_name=='HV8_hako')">
+    <group if="$(eval object_name=='HV8_box_barazumi')">
         <include file="$(find gazebo_ros)/launch/empty_world.launch">
             <arg name="world_name" value="$(find photoneo_setup_sim)/world/sekai.world"/>
         </include>
