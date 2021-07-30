@@ -2,7 +2,9 @@
 Ubuntu20.04でないと、ROS1をpython3で実行することができないので注意してください。
 したがって、まず、以下の手順にしたがってROSのインストールをお願いします。
 <p align="center"><a href="http://wiki.ros.org/noetic/Installation/Ubuntu">ROSのインストール</a></p>
+
 また、今後のために以下のコマンドで必要なパッケージをインストールしてください
+
 ```
 sudo apt install python3-catkin-tools
 sudo apt install python3-catkin-pkg
