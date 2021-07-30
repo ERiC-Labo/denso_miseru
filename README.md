@@ -32,14 +32,16 @@ rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 catkin build
 ```
-次に私が作成したGazeboモデルファイルを読み取れるように環境変数にディレクトリを追加してください。
-```
-echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${HOME}/ros_ws/src/photoneo_setup_sim/models" >> ~/.bashrc
-```
+
 
 これ以降のコンパイルの手順は
 ```
 catkin build (コンパイルしたいパッケージ)
+```
+
+次に私が作成したGazeboモデルファイルを読み取れるように環境変数にディレクトリを追加してください。(一度だけで大丈夫です)
+```
+echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${HOME}/ros_ws/src/photoneo_setup_sim/models" >> ~/.bashrc
 ```
 環境の立ち上げ方(HV8)
 ```
@@ -50,7 +52,7 @@ object_nameに他にはHV7などの別物体やHV8_barazumiでばら積みの物
 ```
 roslaunch photoneo_setup_sim spawn_object.launch object_name:=HV8_box_barazumi
 ```
-
+<img src="https://github.com/ERiC-Labo/denso_miseru/blob/main/image/HV8_barazumi_box.png">
 
 
 ### 実行方法(ラフ認識) 
